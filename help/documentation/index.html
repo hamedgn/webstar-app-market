@@ -1,0 +1,338 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Spotimusic - personal streaming music service  - User Guide </title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Appteve Dev">
+	<meta name="copyright" content="Appteve Dev">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2016-08-25T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-spotimusic-personal-streaming-music-service-">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#backend_settings" title="BACKEND SETTINGS">BACKEND SETTINGS</a></li>
+			<li><a href="#amazon_s3_settings" title="AMAZON S3 SETTINGS">AMAZON S3 SETTINGS</a></li>
+			<li><a href="#app_settings" title="APP SETTINGS">APP SETTINGS</a></li>
+			<li><a href="#admob_settings" title="ADMOB SETTINGS">ADMOB SETTINGS</a></li>
+			<li><a href="#design" title="DESIGN">DESIGN</a></li>
+			<li><a href="#further_help" title="FURTHER HELP">FURTHER HELP</a></li>
+			<li><a href="#support" title="SUPPORT">SUPPORT</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Appteve Dev 2016<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Spotimusic - personal streaming music service </h1>
+	<h2>User Guide </h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 08/24/2016</li>
+	<li>latest update: 08/25/2016</li>
+	<li>by: Appteve Dev</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#104;&#101;&#108;&#112;&#64;&#97;&#112;&#112;&#116;&#101;&#118;&#101;&#46;&#99;&#111;&#109;">&#104;&#101;&#108;&#112;&#64;&#97;&#112;&#112;&#116;&#101;&#118;&#101;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="backend_settings">
+	<div class="page-header"><h3>BACKEND SETTINGS</h3><hr class="notop"></div>
+<p class="p1">
+	<span class="s1">Thank you for purchased our product! We hope you like our app!</span></p>
+<p class="p1">
+	<span class="s1">Let&#39;s start configuring your application.</span></p>
+<p class="p1">
+	<span class="s1">The documentation is written in an example if you are hosting with cpanel</span></p>
+<p class="p1">
+	<span class="s1">Detailed documentation will allow you to configure the application in a short time.</span></p>
+<p class="p1">
+	<span class="s1">The first thing you need to do is configure your backend will store all information applications.</span></p>
+<p class="p1">
+	<span class="s1">1)&nbsp;Unzip the archive with the application and locate the file PHP_BACKEND.zip</span></p>
+<p class="p1">
+	<span class="s1">2) Unzip file&nbsp;S_MUSIC_PHP_BACKEND.zip</span></p>
+<p class="p1">
+	<span class="s1">3)&nbsp;Upload all files from the root directory of your site using your favorite FTP application.</span></p>
+<p class="p1">
+	<span class="s1">4) Create in hosting panel new database MySql</span></p>
+<p class="p1">
+	5) Open phpMyAdmin and choose your new database&nbsp;</p>
+<p class="p1">
+	<img alt="" src="https://api.monosnap.com/rpc/file/download?id=PrObSsOqIyz7aCVc7qGZDGgtj1mQTJ" style="width: 1100px; height: 775px;"></p>
+<p class="p1">
+	<span class="s1">6) Click &quot;Import&quot; button and choose database.sql file in application folder</span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=eK5KVCuvElm6AmnrHelB97hqYZbHPC" style="width: 1100px; height: 775px;"></span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=fDqsy0Q6Kbu2Y7XEsSoq6mwvAmsDsO" style="width: 1094px; height: 572px;"></span></p>
+<p class="p1">
+	7) Click &quot;Go&quot; and import database.</p>
+<p class="p1">
+	<span class="s1">&nbsp;</span>8) Next: configure backend ( database and url )</p>
+<p class="p1">
+	9) Open file database.php ( application -&gt; config folder)</p>
+<p class="p1">
+	<img alt="" src="https://api.monosnap.com/rpc/file/download?id=tGWYmm33n8OdftVHN0SntUhzGdH8Ou" style="width: 1100px; height: 775px;"></p>
+<p class="p1">
+	<span class="s1">10)&nbsp;Change the data from the server, database name, password, database user</span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=PYZoKx6FfVTbBRDpLQbOoGfQjfqYYp" style="width: 1100px; height: 775px;"></span></p>
+<p class="p1">
+	11) Next, open file config.php ( application-&gt;config folder)</p>
+<p class="p1">
+	<img alt="" src="https://api.monosnap.com/rpc/file/download?id=lNR4GUXvpGNsuWqnbnRdS2ATCLoIV6" style="width: 1100px; height: 775px;"></p>
+<p class="p1">
+	<span class="s1">12) Change base_url, sender_email and sender_name&nbsp;</span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=W3HmuMk2Lxk8LhbimUaxq2uzLqAPA2" style="width: 1100px; height: 775px;"></span></p>
+<p class="p1">
+	13) Open your browser to the backend, you should see the login page.</p>
+<p class="p1">
+	<img alt="" src="https://api.monosnap.com/rpc/file/download?id=dspOhQsIXWqhYs0JFIC8voCEeziYAB" style="width: 1100px; height: 768px;"></p>
+<p class="p1">
+	<span class="s1">14) Access Login and Password : admin</span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<p class="p1">
+	<span class="s1">Next, connect the service Amazon S3 for uploads media files</span></p>
+</section>
+<section id="amazon_s3_settings">
+	<div class="page-header"><h3>AMAZON S3 SETTINGS</h3><hr class="notop"></div>
+<p class="p1">
+	<span class="s1">If you do not have an account at Amazon, click here and create your account. &nbsp;<a href="https://aws.amazon.com/?nc1=h_ls"><span class="s2">https://aws.amazon.com/?nc1=h_ls</span></a></span></p>
+<p class="p1">
+	<span class="s1">1) Login or sign up in Aws Amazon</span></p>
+<p class="p1">
+	<span class="s1">2) In Amazon S3 console create new bucket</span></p>
+<p class="p1">
+	<span class="s1">3)&nbsp;Get in Amazon console assecc key and a secret key (&nbsp;How to do it, read the official documentation Amazon Aws&nbsp;<a href="https://aws.amazon.com/documentation/s3/?nc1=h_ls"><span class="s2">https://aws.amazon.com/documentation/s3/?nc1=h_ls</span></a>&nbsp;)</span></p>
+<p class="p1">
+	<span class="s1">4) Open file&nbsp;Amazon3integration_lib.php in application-&gt;libraries folder</span></p>
+<p class="p1">
+	<span class="s1">5) Change bucket name and regions (&nbsp;region you can see in the bucket of properties in the control panel amazon S3 )</span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=b9qlzfBQDvd7WzvZii0SvTvw8mJThZ" style="width: 1100px; height: 775px;"></span></p>
+<p class="p1">
+	6)&nbsp;Scroll page down and change amazon access key and amazon secret key&nbsp;</p>
+<p class="p1">
+	<img alt="" src="https://api.monosnap.com/rpc/file/download?id=T2f5a9LErQ0ftDKBPnBFV7jOAACDXL" style="width: 1100px; height: 775px;"></p>
+<p class="p1">
+	<span class="s1">7) Go to Amazon S3 console</span></p>
+<p class="p1">
+	<span class="s1">8) Choose bucket ,&nbsp;that you have done for the backend and click on it</span></p>
+<p class="p1">
+	<span class="s1">9) Create 4 new folders (album, artist, image, music)</span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=2NT71hOf1BUDmdHPtDB1BuHoHmQSaJ" style="width: 1100px; height: 775px;"></span></p>
+<p class="p1">
+	If done correctly, your backend can upload files to Amazon S3</p>
+<p class="p1">
+	<span class="s1">Next , settings &nbsp;application</span></p>
+</section>
+<section id="app_settings">
+	<div class="page-header"><h3>APP SETTINGS</h3><hr class="notop"></div>
+<p>
+	Setting up the application will take a couple of minutes, it&#39;s easy.</p>
+<p>
+	1)&nbsp;Open the project using Android Studio</p>
+<p>
+	2) Find file&nbsp;Constant.java</p>
+<p>
+	<img alt="" src="https://api.monosnap.com/rpc/file/download?id=e2sxwcxk67IBgKxYoEIlQxJLaZAYtG" style="width: 1100px; height: 601px;"></p>
+<p>
+	3) Change strings:</p>
+<p>
+	BASE_BACKEND_URL - Full &nbsp;url link to your backend</p>
+<p>
+	DEF_TRACK_SEARCH -&nbsp;Any word search screen</p>
+<p>
+	BASE_BACKEND_AMAZON_BUKET - Amazon S3 buket</p>
+<p>
+	DEF_IMAGE -&nbsp;A link to the default imagecover if don&#39;t found in Spotify</p>
+<p>
+	AD_INTERSTITIAL_ID -&nbsp;ID interstitial</p>
+<p>
+	AD_BANNER_ID - ID Banner</p>
+<p>
+	SHOW_AD - Show / hide Ads</p>
+<p>
+	on this, the application configuration is finished</p>
+<p>
+	If you do not know how to create an identity advertising, read the next chapter</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="admob_settings">
+	<div class="page-header"><h3>ADMOB SETTINGS</h3><hr class="notop"></div>
+<p class="p1">
+	<span class="s1">This application is integrated ad serving on Google</span></p>
+<p class="p1">
+	<span class="s1">1) Go to Google Admob service&nbsp;</span></p>
+<p class="p1">
+	<span class="s1">2) Click on &quot;Monetize&quot; button and &quot;Monetize new app&quot;</span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=crnpOLN2DQ2vpcg5tQ5g7sv4Uh0CXP" style="width: 1100px; height: 775px;"></span></p>
+<p class="p1">
+	3) Choose &quot;Add your app manually&quot;, fill App name, select platform &quot;ios&quot;, click &quot;Add app&quot;</p>
+<p class="p1">
+	<img alt="" src="https://api.monosnap.com/rpc/file/download?id=uc5IcI1Y5yjxO716Fvwt08FiuLZ8ed" style="width: 1100px; height: 775px;"></p>
+<p class="p1">
+	<span class="s1">4) Select Ad format - &quot;Banner&quot;, fill &quot;Ad unit name&quot; and click &quot;Save&quot;</span></p>
+<p class="p1">
+	<img alt="" src="https://api.monosnap.com/rpc/file/download?id=FBN5Smdz5BMUtHtlEDsEEX6N8A2zrg" style="width: 1100px; height: 775px;"></p>
+<p class="p1">
+	<span class="s1">5) Copy Ad unit ID&nbsp;</span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=2IMyY92BOJCPbcdWxYRktmeQhVh3Me" style="width: 1100px; height: 775px;"></span></p>
+<p class="p1">
+	<span class="s1">6) Open Android project , find file Constant.java and paste ID ADs</span></p>
+<p class="p1">
+	<span class="s1"><img alt="" src="https://api.monosnap.com/rpc/file/download?id=jcaIJTXvI4L8oWUtZztErLn8r8TcMG"  ></span></p>
+</section>
+<section id="design">
+	<div class="page-header"><h3>DESIGN</h3><hr class="notop"></div>
+<p class="p1">
+	<span class="s1">We can not physically assume and to guess the needs and desires of each user to customize the design. So we are not sure that we can explain the advanced features in the application, since it does not know your training in programming.</span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<p class="p1">
+	<span class="s1">If you have any questions - write to our support team.</span></p>
+</section>
+<section id="further_help">
+	<div class="page-header"><h3>FURTHER HELP</h3><hr class="notop"></div>
+<p class="p1">
+	<span class="s1"><b>What we can help you with</b></span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<p class="p1">
+	<span class="s1">We can help you with any questions about how the application works and any bugs or errors you might find, for example:</span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<ul class="ul1">
+	<li class="li1">
+		<span class="s1">Which file is some particular code in?</span></li>
+	<li class="li1">
+		<span class="s1">What can the application do (or not do)?</span></li>
+	<li class="li1">
+		<span class="s1">Are there future updates and enhancements planned?</span></li>
+	<li class="li1">
+		<span class="s1">I found a bug/error!, etc.</span></li>
+</ul>
+<p class="p1">
+	<span class="s1"><b>What we cannot help you with</b></span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<p class="p1">
+	<span class="s1">Codecanyon does not require authors to give support in any way shape or form, nor does your purchase of a Codecanyon item come with any guarantee of support in any way. However, we still spend a great deal of time each week providing support to you guys because it&#39;s important to us that you guys get a top-notch product and service.</span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<p class="p1">
+	<span class="s1">That said, it is not feasible for me time-wise to provide support beyond questions about how the applications works and fixing any bugs or errors. This includes:</span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<ol class="ol1">
+	<li class="li1">
+		<span class="s1">Customizing the applications</span></li>
+	<li class="li1">
+		<span class="s1">Adding or modifying the applications functionality</span></li>
+	<li class="li1">
+		<span class="s1">We do not teach programming languages and do not give tips on how to make</span></li>
+	<li class="li1">
+		<span class="s1">Teaching you how to use Xcode or any development editing programs</span></li>
+	<li class="li1">
+		<span class="s1">Support for external plugins and frameworks</span></li>
+</ol>
+<p class="p1">
+	<span class="s1"><b>Please do not abuse support</b></span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<p class="p1">
+	<span class="s1">This support is provided completely free of charge. Please remember that a customized Application would normally cost $1500-3000, and for $10-30 you are getting a bargain. For this reason, please do not expect us to tailor the application to your individual needs, it is not physically possible to do this for each of you.</span></p>
+<p class="p1">
+	<span class="s1">&nbsp;</span></p>
+<p class="p1">
+	<span class="s1">That said, if you find any errors or bugs, don&#39;t hesitate to let us know via the support and we will try to get it fixed as soon as possible. At the end of the day, we hope you guys enjoy using this applications! If you are happy with it, please don&#39;t forget to rate it on Codecanyon! (We will love you forever ^^)</span></p>
+</section>
+<section id="support">
+	<div class="page-header"><h3>SUPPORT</h3><hr class="notop"></div>
+<p class="p1">
+	<span class="s1">Address Customer Support: http://help.appteve.com</span></p>
+<p class="p1">
+	<span class="s1">Support rules :&nbsp;https://appteve.com/terms-of-purchase/</span></p>
+<p class="p1">
+	<span class="s1">Email: &#104;&#101;&#108;&#112;&#64;&#97;&#112;&#112;&#116;&#101;&#118;&#101;&#46;&#99;&#111;&#109;</span></p>
+</section>
+
+	</div>
+</body>
+</html>
