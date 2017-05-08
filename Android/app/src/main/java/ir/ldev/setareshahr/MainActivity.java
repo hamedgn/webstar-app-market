@@ -10,10 +10,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-
+import com.google.firebase.analytics.FirebaseAnalytics;
 import ir.ldev.setareshahr.app.App;
 import ir.ldev.setareshahr.common.ActivityBase;
 import ir.ldev.setareshahr.dialogs.CoverChooseDialog;
@@ -38,12 +39,14 @@ public class MainActivity extends ActivityBase implements FragmentDrawer.Fragmen
     int page = 0;
 
     private Boolean restore = false;
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         if (savedInstanceState != null) {
 
             //Restore the fragment's instance
@@ -93,6 +96,15 @@ public class MainActivity extends ActivityBase implements FragmentDrawer.Fragmen
             // Show default section "Stream"
 
             displayView(1);
+        }
+        if (App.getInstance().getId() != 0) {
+
+            Toast.makeText(this,"خوش آمدید",Toast.LENGTH_LONG).show();
+
+        } else {
+
+            Toast.makeText(this,"خوش آمدید",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"برای ثبت نام به منو در قسمت پروفایل مراجعه نمایید.",Toast.LENGTH_LONG).show();
         }
     }
 
